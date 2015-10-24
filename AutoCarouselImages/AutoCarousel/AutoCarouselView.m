@@ -43,8 +43,14 @@
     return self;
 }
 
-- (void)startCarousel
+- (void)startCarouselWithImageArrays:(NSMutableArray *)imageArray showTexts:(NSMutableArray *)showTexts placeholderImage:(UIImage *)placeholderImage stopDuration:(NSTimeInterval)stopDuraiton scrollDuration:(NSTimeInterval)scrollDuration
 {
+    self.dataSources = imageArray;
+    self.showTexts = showTexts;
+    self.placeholderImage = placeholderImage;
+    self.stopDuration = stopDuraiton;
+    self.scrollDuration = scrollDuration;
+    
     [self ProcessingDataSources];
     
     if (self.dataSources.count > 1) {
@@ -129,7 +135,7 @@
 #pragma mark - 启动定时器
 - (void)startTimer
 {
-    _timer = [NSTimer timerWithTimeInterval:self.scrollDuration>0?self.scrollDuration:kDefaultStopDuration target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
+    _timer = [NSTimer timerWithTimeInterval:self.stopDuration>0?self.stopDuration:kDefaultStopDuration target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
 }
 

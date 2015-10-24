@@ -28,18 +28,14 @@
     //Assets.xcassets中提供了6张图片，显示本地图片的例子不在提供
     
     AutoCarouselView *carouselView = [[AutoCarouselView alloc] initWithFrame:CGRectMake(0, 0, 320, 160) previewMode:AutoCarouseViewModeDefault];
-    //需要显示的图片数组
-    carouselView.dataSources = imageNames;
     //显示文本
-    carouselView.showTexts = [@[@"第一张", @"第二张", @"第三张", @"第四张", @"第五张", @"第六张"] mutableCopy];
-    //默认图片
-    carouselView.placeholderImage = [UIImage imageNamed:@"ic_default_photo"];
+    NSMutableArray *showTexts = [NSMutableArray arrayWithObjects:@"第一张", @"第二张", @"第三张", @"第四张", @"第五张", @"第六张", nil];
     //点击回调
     [carouselView setCallBackBlock:^(NSString *imageName) {
         [self showAlertWithMessage:[NSString stringWithFormat:@"点击的图片名字:%@", imageName]];
     }];
     //开始轮播图片
-    [carouselView startCarousel];
+    [carouselView startCarouselWithImageArrays:imageNames showTexts:showTexts placeholderImage:[UIImage imageNamed:@"ic_default_photo"] stopDuration:4 scrollDuration:1];
     
     carouselView.center = self.view.center;
     [self.view addSubview:carouselView];

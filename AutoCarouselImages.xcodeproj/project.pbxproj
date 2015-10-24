@@ -17,8 +17,8 @@
 		FDD25B051BDB9166003255E3 /* AutoCarouselImagesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD25B041BDB9166003255E3 /* AutoCarouselImagesUITests.m */; };
 		FDD25B151BDB91BC003255E3 /* AutoCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD25B141BDB91BC003255E3 /* AutoCarouselView.m */; };
 		FDD25B191BDB956E003255E3 /* AutoCarouselViewModeDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B181BDB956E003255E3 /* AutoCarouselViewModeDefault.xib */; };
-		FDD25B1B1BDB95C5003255E3 /* AutoCarouselViewModeText.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B1A1BDB95C5003255E3 /* AutoCarouselViewModeText.xib */; };
 		FDD25B1E1BDB9FE4003255E3 /* UIImageView+ShowNetWorkImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD25B1D1BDB9FE4003255E3 /* UIImageView+ShowNetWorkImage.m */; };
+		FDD25B241BDBE0D5003255E3 /* AutoCarouselViewModeText.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B231BDBE0D5003255E3 /* AutoCarouselViewModeText.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		FDD25B131BDB91BC003255E3 /* AutoCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCarouselView.h; sourceTree = "<group>"; };
 		FDD25B141BDB91BC003255E3 /* AutoCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCarouselView.m; sourceTree = "<group>"; };
 		FDD25B181BDB956E003255E3 /* AutoCarouselViewModeDefault.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCarouselViewModeDefault.xib; sourceTree = "<group>"; };
-		FDD25B1A1BDB95C5003255E3 /* AutoCarouselViewModeText.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCarouselViewModeText.xib; sourceTree = "<group>"; };
 		FDD25B1C1BDB9FE4003255E3 /* UIImageView+ShowNetWorkImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ShowNetWorkImage.h"; sourceTree = "<group>"; };
 		FDD25B1D1BDB9FE4003255E3 /* UIImageView+ShowNetWorkImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ShowNetWorkImage.m"; sourceTree = "<group>"; };
+		FDD25B231BDBE0D5003255E3 /* AutoCarouselViewModeText.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCarouselViewModeText.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				FDD25B131BDB91BC003255E3 /* AutoCarouselView.h */,
 				FDD25B141BDB91BC003255E3 /* AutoCarouselView.m */,
 				FDD25B181BDB956E003255E3 /* AutoCarouselViewModeDefault.xib */,
-				FDD25B1A1BDB95C5003255E3 /* AutoCarouselViewModeText.xib */,
+				FDD25B231BDBE0D5003255E3 /* AutoCarouselViewModeText.xib */,
 			);
 			path = AutoCarousel;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 				FDD25AEF1BDB9166003255E3 /* LaunchScreen.storyboard in Resources */,
 				FDD25B191BDB956E003255E3 /* AutoCarouselViewModeDefault.xib in Resources */,
 				FDD25AEC1BDB9166003255E3 /* Assets.xcassets in Resources */,
-				FDD25B1B1BDB95C5003255E3 /* AutoCarouselViewModeText.xib in Resources */,
+				FDD25B241BDBE0D5003255E3 /* AutoCarouselViewModeText.xib in Resources */,
 				FDD25AEA1BDB9166003255E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
