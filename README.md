@@ -2,8 +2,7 @@
 
 ####使用方法
 ```objc
-AutoCarouselView *carouselView = [[AutoCarouselView alloc] initWithFrame:CGRectMake(0, 0, 320, 160) previewMode:AutoCarouseViewModeDefault];
-    //显示文本
+    AutoCarouselView *carouselView = [[AutoCarouselView alloc] initWithFrame:CGRectMake(0, 0, 320, 160) previewMode:AutoCarouseViewModeDefault];
     //点击回调
     [carouselView setCallBackBlock:^(NSString *imageName) {
         //点击回调
