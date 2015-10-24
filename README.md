@@ -13,5 +13,7 @@ AutoCarouselView *carouselView = [[AutoCarouselView alloc] initWithFrame:CGRectM
     [self.view addSubview:carouselView];
 ```
 
-####效果图
-![image]()
+####默认样式效果图
+![image](https://github.com/longitachi/AutoCarouselImages/blob/master/效果图/默认样式.gif)
+####带文本的效果图
+![image](https://github.com/longitachi/AutoCarouselImages/blob/master/效果图/带文本样式.gif)
