@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AutoCarouselView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIj-OS-lMQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                    <animations/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="gTs-QW-Iy4"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVl-PG-4i1">
+                    <rect key="frame" x="0.0" y="120" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pys-To-EDl">
+                            <rect key="frame" x="10" y="0.0" width="180" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="5Gt-ve-DyA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="lwN-UO-MFL">
+                            <rect key="frame" x="190" y="0.0" width="130" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kCG-Sr-cuj"/>
+                            </constraints>
+                        </pageControl>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Pys-To-EDl" secondAttribute="bottom" id="04I-XB-Mzp"/>
+                        <constraint firstAttribute="trailing" secondItem="lwN-UO-MFL" secondAttribute="trailing" id="6WV-de-BbX"/>
+                        <constraint firstItem="Pys-To-EDl" firstAttribute="top" secondItem="gVl-PG-4i1" secondAttribute="top" id="S6d-yx-Wt2"/>
+                        <constraint firstItem="lwN-UO-MFL" firstAttribute="top" secondItem="gVl-PG-4i1" secondAttribute="top" id="exE-Gj-qjZ"/>
+                        <constraint firstItem="lwN-UO-MFL" firstAttribute="leading" secondItem="Pys-To-EDl" secondAttribute="trailing" id="g1X-wF-4Ke"/>
+                        <constraint firstAttribute="height" constant="30" id="we4-VD-5Vx"/>
+                        <constraint firstItem="Pys-To-EDl" firstAttribute="leading" secondItem="gVl-PG-4i1" secondAttribute="leading" constant="10" id="yE3-av-NDS"/>
+                        <constraint firstAttribute="bottom" secondItem="lwN-UO-MFL" secondAttribute="bottom" id="yMz-Aq-w3G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gVl-PG-4i1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DYS-uR-rZr"/>
+                <constraint firstItem="EIj-OS-lMQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ma9-4n-spT"/>
+                <constraint firstAttribute="bottom" secondItem="EIj-OS-lMQ" secondAttribute="bottom" id="QUU-Y9-Js0"/>
+                <constraint firstItem="EIj-OS-lMQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T6d-jH-wPq"/>
+                <constraint firstAttribute="bottom" secondItem="gVl-PG-4i1" secondAttribute="bottom" id="pAM-ht-Qt8"/>
+                <constraint firstAttribute="trailing" secondItem="gVl-PG-4i1" secondAttribute="trailing" id="vDP-xF-JJc"/>
+                <constraint firstAttribute="trailing" secondItem="EIj-OS-lMQ" secondAttribute="trailing" id="zcP-m9-WFF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labText" destination="Pys-To-EDl" id="LJ6-uY-26o"/>
+                <outlet property="pageController" destination="lwN-UO-MFL" id="dxb-02-jUE"/>
+                <outlet property="scrollView" destination="EIj-OS-lMQ" id="v5u-FM-nX3"/>
+                <outlet property="textBgView" destination="gVl-PG-4i1" id="XTC-Xa-1dh"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="447"/>
+        </view>
+    </objects>
+</document>
