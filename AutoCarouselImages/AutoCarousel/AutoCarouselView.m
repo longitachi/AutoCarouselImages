@@ -45,6 +45,10 @@
 
 - (void)startCarouselWithImageArrays:(NSMutableArray *)imageArray showTexts:(NSMutableArray *)showTexts placeholderImage:(UIImage *)placeholderImage stopDuration:(NSTimeInterval)stopDuraiton scrollDuration:(NSTimeInterval)scrollDuration
 {
+    if (_mode == AutoCarouseViewModeText && showTexts.count > 0) {
+        NSAssert(imageArray.count == showTexts.count, @"显示文本模式下，图片数量必须和文本数量相同");
+    }
+    
     self.dataSources = imageArray;
     self.showTexts = showTexts;
     self.placeholderImage = placeholderImage;
