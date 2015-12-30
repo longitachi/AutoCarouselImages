@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutoCarouselImages/AutoCarousel/AutoCarouselView.m"
-            timestampString = "467398223.858457"
+            timestampString = "472984530.775158"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-scrollViewDidEndDecelerating:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutoCarouselImages/AutoCarousel/AutoCarouselView.m"
-            timestampString = "467398223.858457"
+            timestampString = "472984530.775158"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "-timerAction:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutoCarouselImages/AutoCarousel/AutoCarouselView.m"
-            timestampString = "467398256.969802"
+            timestampString = "472984530.775158"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "@implementation AutoCarouselView"
             landmarkType = "3">
          </BreakpointContent>

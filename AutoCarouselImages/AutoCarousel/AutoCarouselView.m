@@ -35,6 +35,7 @@
         self.frame = frame;
         //打开用户交互权限
         self.userInteractionEnabled = YES;
+        self.pageController.defersCurrentPageDisplay = YES;
         self.scrollDuration = .0;
         self.stopDuration = .0;
         _mode = mode;
